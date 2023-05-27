@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpdatePage</title>
+    <style>
+    body{
+        background-color: rgb(32, 29, 29);
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+    p{
+        text-align: center;
+        color: azure;
+        font-size:large;
+    }
+    table{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td{
+        color: wheat;
+        font-size: large;
+        font-weight: bold;
+    }
+    #submit{
+        margin-left: 700px;
+        padding: 10px 40px;
+        background-color: cadetblue;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Student Application</h1>
+        <p>This is used to performing CRUD Operations....Choose the below options to perform actions..</p>
+        <hr>
+        <br><br>
+    </header>
+    <p>Your Selected Update Option</p>
+    <p>Enter the student details......</p>
+    <form>
+        <table>
+            <tr><td>Enter Roll Number or Email Id : </td><td><input type="text" name="rnei" placeholder="enter roll or email" required></td></tr>
+            <tr><td>Select option from dropdown list : </td><td><select name="list" required>
+                <option value="">First name</option>
+                <option value="">Last name</option>
+                <option value="">Age</option>
+                <option value="">Mobile Number</option>
+                <option value="">Email</option>
+            </select></td></tr>
+            <tr><td>Enter the data : </td><td><input type="text" placeholder="enter the data" name="data" required></td></tr>
+        </table>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpdatePage</title>
+    <style>
+    body{
+        background-color: rgb(32, 29, 29);
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+    p{
+        text-align: center;
+        color: azure;
+        font-size:large;
+    }
+    table{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td{
+        color: wheat;
+        font-size: large;
+        font-weight: bold;
+    }
+    #submit{
+        margin-left: 700px;
+        padding: 10px 40px;
+        background-color: cadetblue;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+    }
+    a{
+            padding: 10px 40px;
+            background-color: cornflowerblue;
+            border-radius: 15px;
+            margin-left: 569px;
+            font-weight: bold;
+            font-size: large;
+            color: blue;
+            border: none;
+            text-decoration: none;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Student Application</h1>
+        <p>This is used to performing CRUD Operations....Choose the below options to perform actions..</p>
+        <hr>
+        <br><br>
+    </header>
+    <p>Your Selected Delete Option</p>
+    <p>Enter the student details......</p>
+    <form action="DeleteStudent" method="post">
+        <table>
+            <tr><td><label>Roll No : </label></td><td><input type="text" name="roll" placeholder="Enter roll no"></td></tr>
+            <tr><td><label>Email Id : </label></td><td><input type="email" name="email" placeholder="Enter xyz@abc.com"></td></tr>
+        </table>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+    <br>
+    <hr>
+    <br>
+    <p>To Delete All The Students Details</p>
+    <a href="http://localhost:8080/StudentApplication/DeleteAll">Click on the link to Delete All Student Details</a>
+</body>
+</html>
